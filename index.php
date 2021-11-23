@@ -22,15 +22,15 @@
 //  echo '<br> Vitesse du camion : ' . $truck->getCurrentSpeed() . ' km/h' . '<br>';
 //  echo $truck->brake();
 
-require_once 'Bus.php';
-require_once 'Car.php';
+// require_once 'Bus.php';
+// require_once 'Car.php';
 
-$tesla = new Car('black', 4);
-$ferrari = new Car('red', 2);
-$schoolBus = new Bus('yellow', 40);
+// $tesla = new Car('black', 4);
+// $ferrari = new Car('red', 2);
+// $schoolBus = new Bus('yellow', 40);
 
-echo $tesla->color;
-echo $ferrari->color;
-echo $schoolBus->color;
+// echo $tesla->color;
+// echo $ferrari->color;
+// echo $schoolBus->color;
 
 ?>
