@@ -6,13 +6,13 @@ class Bicycle extends Vehicle implements LightableInterface
 {
     public function switchOn(): bool
     {
-        if(currentSpeed > 10){
-        return true . " The light in on ";
-        }else return false . " The light in off ";
+        if($this->currentSpeed > 10){
+        return true;
+        }else return false;
     }
 
     public function switchOff(): bool
     {
-        return false . " The light in off ";
+        return false;
     }
 }
