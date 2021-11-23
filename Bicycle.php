@@ -9,7 +9,8 @@ class Bicycle extends Vehicle implements LightableInterface
 
     public function switchOn(): bool
     {
-        return true;
+        if(currentSpeed > 10){
+        return true;}
     }
 
     public function switchOff(): bool
