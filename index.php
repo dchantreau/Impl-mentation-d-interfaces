@@ -4,7 +4,7 @@ require_once 'Bicycle.php';
 require_once 'Car.php';
 
 $tesla = new Car('black', 4);
-$myBicycle = new Bicycle('red', 2);
+$myBicycle = new Bicycle('red', 9);
 $townBicycle = new Bicycle('yellow', 40);
 
 ?>
@@ -21,7 +21,7 @@ $townBicycle = new Bicycle('yellow', 40);
         <body>
             <?php echo $tesla->switchOn() . " The light is on ";?>
             <br>
-            <?php echo $myBicycle->switchOn() . " The light is on ";?>
+            <?php echo $myBicycle->switchOn() . " The light is off ";?>
             <br>
             <?php echo $townBicycle->switchOff() . " The light is off ";?>
         </body>
