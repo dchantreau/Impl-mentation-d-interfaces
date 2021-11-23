@@ -1,38 +1,26 @@
-<?php 
+<?php
 
 class Vehicle
 {
- 
+
     protected string $color;
 
     protected int $currentSpeed;
 
-    protected int $nbSeats;
-
-    protected int $nbWheels;
-
-    public function __construct(string $color, int $nbSeats)
+    public function __construct(string $color, int $currentSpeed)
     {
         $this->color = $color;
-        $this->nbSeats = $nbSeats;
+        $this->currentSpeed = $currentSpeed;
     }
 
-    public function forward(): string
+    public function getColor(): string
     {
-        $this->currentSpeed = 15;
-        return "Go !";
+        return $this->color;
     }
 
-    public function brake(): string
+    public function setColor(string $color): void
     {
-        $sentence = "";
-        while ($this->currentSpeed > 0) {
-            $this->currentSpeed--;
-            $sentence .= "Brake !!!";
-        }
-
-        $sentence .= "I'm stopped !";
-        return $sentence;
+        $this->color = $color;
     }
 
     public function getCurrentSpeed(): int
@@ -47,35 +35,6 @@ class Vehicle
         }
     }
 
-    public function getColor(): string
-    {
-        return $this->color;
-    }
-
-    public function setColor(string $color): void
-    {
-        $this->color = $color;
-    }
-
-    public function getNbSeats(): int
-    {
-        return $this->nbSeats;
-    }
-
-    public function setNbSeats(int $nbSeats): void
-    {
-        $this->nbSeats = $nbSeats;
-    }
-
-    public function getNbWheels(): int
-    {
-        return $this->nbWheels;
-    }
-
-    public function setNbWheels(int $nbWheels): void
-    {
-        $this->nbWheels = $nbWheels;
-    }
 }
 
 ?>

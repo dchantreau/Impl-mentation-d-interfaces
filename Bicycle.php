@@ -1,20 +1,18 @@
 <?php
 require_once 'Vehicle.php';
+require_once 'LightableInterface.php';
+
 class Bicycle extends Vehicle implements LightableInterface
 {
-    public function changeWheel()
-    {
-        return "change the two wheels of a Bicycle";
-    }
-
     public function switchOn(): bool
     {
         if(currentSpeed > 10){
-        return true;}
+        return true . " The light in on ";
+        }else return false . " The light in off ";
     }
 
     public function switchOff(): bool
     {
-        return false;
+        return false . " The light in off ";
     }
 }
